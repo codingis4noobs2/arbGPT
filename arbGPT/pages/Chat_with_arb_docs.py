@@ -20,8 +20,11 @@ st.set_page_config(
 st.sidebar.warning("ArbGPT can make mistakes. Double-check important info.")
 
 # Retrieve environment variables
-MONGODB_CONN_URI = os.getenv('MONGODB_CONN_URI')
-GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
+# MONGODB_CONN_URI = os.getenv('MONGODB_CONN_URI')
+# GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
+
+MONGODB_CONN_URI = st.secrets['MONGODB_CONN_URI']
+GITHUB_TOKEN = st.secrets['GITHUB_TOKEN']
 
 # MongoDB database and collection configuration
 DB_NAME = "arb_knowledgebase"
