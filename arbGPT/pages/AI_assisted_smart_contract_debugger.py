@@ -11,8 +11,12 @@ from llama_index.vector_stores.mongodb import MongoDBAtlasVectorSearch
 load_dotenv()
 
 # Retrieve environment variables
-MONGODB_CONN_URI = os.getenv('MONGODB_CONN_URI')
-GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
+# Uncomment when running locally
+# MONGODB_CONN_URI = os.getenv('MONGODB_CONN_URI')
+# GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
+
+MONGODB_CONN_URI = st.secrets['MONGODB_CONN_URI']
+GITHUB_TOKEN = st.secrets['GITHUB_TOKEN']
 
 # Set up Streamlit page configuration
 st.set_page_config(
