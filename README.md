@@ -3,6 +3,8 @@
 ArbGPT is a powerful tool designed to enhance the development experience for Arbitrum devs. This application integrates AI technologies to offer intelligent code debugging, code generation. 
 
 ## Demo:
+https://github.com/user-attachments/assets/0e94c885-89dc-4918-80df-72c3bc1eedc1
+
 
 ## Key Features
 
